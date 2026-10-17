@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tugas Form Biodata</string>
+    <string name="header_desc">Gambar header neon</string>
+    <string name="form_title">Form Member JMK48</string>
+    <string name="form_subtitle">Silahkan isi biodata Anda dibawah ini !!!</string>
+    <string name="first_name">Nama Depan</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="email">Email</string>
+    <string name="birth_date">Tgl Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="skill_label">Pilih Member Fav Kalian :</string>
+    <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+    <string name="proceed">Proceed</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="icon_calendar">Pilih tanggal</string>
+    <string name="icon_dropdown">Buka pilihan</string>
+    <string name="date_format" translatable="false">dd/MM/yyyy</string>
+    <string name="result_title">Biodata Tersimpan</string>
+    <string name="result_message">Nama: %1$s %2$s\nEmail: %3$s\nTgl Lahir: %4$s\nExperience: %5$s\nSkill: %6$s</string>
+    <string name="skill_separator" translatable="false">, </string>
+    <string name="form_bg_desc">Latar form</string>
+
