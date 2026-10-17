@@ -262,3 +262,18 @@ private fun PageIndicator(modifier: Modifier = Modifier) {
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.indicator_gap))
     ) {
+        repeat(total) { index ->
+            Box(
+                modifier = Modifier
+                    .size(dimensionResource(R.dimen.indicator_size))
+                    .clip(CircleShape)
+                    .background(
+                        colorResource(
+                            if (index == active) R.color.dot_active else R.color.dot_inactive
+                        )
+                    )
+            )
+        }
+    }
+}
+
