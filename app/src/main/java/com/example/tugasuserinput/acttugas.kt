@@ -336,4 +336,16 @@ private fun DateField(
         modifier = modifier
     )
 
-    
+    if (showDialog) {
+        val state = rememberDatePickerState()
+        DatePickerDialog(
+            onDismissRequest = { showDialog = false },
+            confirmButton = {
+                TextButton(onClick = {
+                    state.selectedDateMillis?.let {
+                        onDateSelected(SimpleDateFormat(pattern, Locale.getDefault()).format(Date(it)))
+                    }
+                    showDialog = false
+                }) { Text(stringResource(R.string.ok)) }
+            },
+            
