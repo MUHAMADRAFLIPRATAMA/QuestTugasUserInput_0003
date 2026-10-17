@@ -63,3 +63,7 @@ import androidx.compose.material3.AlertDialog
 @Composable
 fun spResource(@DimenRes id: Int): TextUnit = dimensionResource(id).value.sp
 
+@Composable
+fun floatResource(@DimenRes id: Int): Float =
+    ResourcesCompat.getFloat(LocalContext.current.resources, id)
+
