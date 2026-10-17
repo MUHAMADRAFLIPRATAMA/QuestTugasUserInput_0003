@@ -314,4 +314,6 @@ private fun DateField(
     onDateSelected: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    
+    var showDialog by remember { mutableStateOf(false) }
+    val pattern = stringResource(R.string.date_format)
+
