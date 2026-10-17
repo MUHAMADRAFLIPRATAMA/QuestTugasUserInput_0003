@@ -227,3 +227,10 @@ fun FormBiodataScreen() {
             }
         }
     }
+    if (showResult) {
+        val skills = buildList {
+            if (skillAndroid) add(stringResource(R.string.skill_android))
+            if (skillUiux) add(stringResource(R.string.skill_uiux))
+            if (skillWeb) add(stringResource(R.string.skill_web))
+        }.joinToString(stringResource(R.string.skill_separator))
+
