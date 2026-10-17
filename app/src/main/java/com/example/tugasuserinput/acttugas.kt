@@ -383,3 +383,19 @@ private fun ExperienceDropdown(
             colors = fieldColors(),
             modifier = Modifier.fillMaxWidth()
         )
+        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+            options.forEach { option ->
+                DropdownMenuItem(
+                    text = { Text(option) },
+                    onClick = {
+                        onSelected(option)
+                        expanded = false
+                    }
+                )
+            }
+        }
+    }
+}
+
+
+
