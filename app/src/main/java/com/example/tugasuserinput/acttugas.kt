@@ -234,3 +234,14 @@ fun FormBiodataScreen() {
             if (skillWeb) add(stringResource(R.string.skill_web))
         }.joinToString(stringResource(R.string.skill_separator))
 
+        AlertDialog(
+            onDismissRequest = { showResult = false },
+            title = { Text(stringResource(R.string.result_title)) },
+            text = {
+                Text(
+                    stringResource(
+                        R.string.result_message,
+                        firstName, lastName, email, birthDate, experience, skills
+                    )
+                )
+            },
