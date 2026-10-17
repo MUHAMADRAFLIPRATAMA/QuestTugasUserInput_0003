@@ -258,4 +258,7 @@ fun FormBiodataScreen() {
 private fun PageIndicator(modifier: Modifier = Modifier) {
     val total = integerResource(R.integer.indicator_count)
     val active = integerResource(R.integer.indicator_active_index)
-    
+    Row(
+        modifier = modifier,
+        horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.indicator_gap))
+    ) {
