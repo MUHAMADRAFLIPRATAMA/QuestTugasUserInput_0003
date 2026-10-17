@@ -83,3 +83,9 @@ fun FormBiodataScreen() {
             email.isNotBlank() && birthDate.isNotBlank() &&
             experience.isNotBlank() && (skillAndroid || skillUiux || skillWeb)
 
+    val cardShape = RoundedCornerShape(
+        topStart = dimensionResource(R.dimen.card_corner),
+        topEnd = dimensionResource(R.dimen.card_corner)
+    )
+
+    
