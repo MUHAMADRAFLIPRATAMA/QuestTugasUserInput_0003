@@ -79,4 +79,7 @@ fun FormBiodataScreen() {
     var skillWeb by remember { mutableStateOf(false) }
     var showResult by remember { mutableStateOf(false) }
 
-    
+    val isValid = firstName.isNotBlank() && lastName.isNotBlank() &&
+            email.isNotBlank() && birthDate.isNotBlank() &&
+            experience.isNotBlank() && (skillAndroid || skillUiux || skillWeb)
+
