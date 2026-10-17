@@ -145,4 +145,10 @@ fun FormBiodataScreen() {
                             )
                     )
 
-                    
+                    Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.field_gap))) {
+                        FormField(
+                            value = firstName,
+                            onValueChange = { firstName = it },
+                            label = stringResource(R.string.first_name),
+                            modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
+                        )
