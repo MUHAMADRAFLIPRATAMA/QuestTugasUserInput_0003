@@ -160,4 +160,13 @@ fun FormBiodataScreen() {
                         )
                     }
 
+                    Spacer(Modifier.height(dimensionResource(R.dimen.section_gap)))
+                    FormField(
+                        value = email,
+                        onValueChange = { email = it },
+                        label = stringResource(R.string.email),
+                        keyboardType = KeyboardType.Email,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
                     
