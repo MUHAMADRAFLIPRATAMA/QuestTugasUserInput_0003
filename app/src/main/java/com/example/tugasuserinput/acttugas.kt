@@ -277,3 +277,13 @@ private fun PageIndicator(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+private fun fieldColors() = OutlinedTextFieldDefaults.colors(
+    focusedBorderColor = colorResource(R.color.form_title),
+    unfocusedBorderColor = colorResource(R.color.form_border),
+    focusedTextColor = colorResource(R.color.form_text),
+    unfocusedTextColor = colorResource(R.color.form_text),
+    focusedLabelColor = colorResource(R.color.form_title),
+    unfocusedLabelColor = colorResource(R.color.form_text)
+)
+
