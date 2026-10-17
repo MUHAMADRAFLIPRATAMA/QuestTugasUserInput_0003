@@ -116,3 +116,7 @@ fun FormBiodataScreen() {
                         elevation = dimensionResource(R.dimen.card_elevation),
                         shape = cardShape
                     )
+                    .background(
+                        color = colorResource(R.color.card_background),
+                        shape = cardShape
+                    )
