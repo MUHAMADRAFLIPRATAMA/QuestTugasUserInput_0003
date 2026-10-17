@@ -183,4 +183,11 @@ fun FormBiodataScreen() {
                         )
                     }
 
+                    Text(
+                        text = stringResource(R.string.skill_label),
+                        color = colorResource(R.color.form_text),
+                        fontSize = spResource(R.dimen.text_label),
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(top = dimensionResource(R.dimen.section_gap))
+                    )
                     
