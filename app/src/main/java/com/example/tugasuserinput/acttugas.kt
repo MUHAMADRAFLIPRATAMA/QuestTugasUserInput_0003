@@ -132,3 +132,17 @@ fun FormBiodataScreen() {
                         textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Text(
+                        text = stringResource(R.string.form_subtitle),
+                        color = colorResource(R.color.form_subtitle),
+                        fontSize = spResource(R.dimen.text_subtitle),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(
+                                top = dimensionResource(R.dimen.subtitle_gap),
+                                bottom = dimensionResource(R.dimen.section_gap)
+                            )
+                    )
+
+                    
