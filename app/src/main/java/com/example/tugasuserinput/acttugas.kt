@@ -190,4 +190,10 @@ fun FormBiodataScreen() {
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(top = dimensionResource(R.dimen.section_gap))
                     )
-                    
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = dimensionResource(R.dimen.skill_gap_top)),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
