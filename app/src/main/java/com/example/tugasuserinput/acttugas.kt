@@ -152,3 +152,12 @@ fun FormBiodataScreen() {
                             label = stringResource(R.string.first_name),
                             modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
                         )
+                        FormField(
+                            value = lastName,
+                            onValueChange = { lastName = it },
+                            label = stringResource(R.string.last_name),
+                            modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
+                        )
+                    }
+
+                    
