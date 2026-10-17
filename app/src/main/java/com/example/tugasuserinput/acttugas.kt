@@ -94,4 +94,12 @@ fun FormBiodataScreen() {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            
+            Image(
+                painter = painterResource(R.drawable.prabowo),
+                contentDescription = stringResource(R.string.header_desc),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(dimensionResource(R.dimen.header_height))
+            )
+           
