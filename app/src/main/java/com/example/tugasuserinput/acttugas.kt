@@ -217,3 +217,13 @@ fun FormBiodataScreen() {
                             .padding(top = dimensionResource(R.dimen.button_gap_top))
                             .height(dimensionResource(R.dimen.button_height))
                     ) {
+                        Text(
+                            text = stringResource(R.string.proceed),
+                            fontSize = spResource(R.dimen.text_button),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
+    }
