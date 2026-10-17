@@ -67,3 +67,16 @@ fun spResource(@DimenRes id: Int): TextUnit = dimensionResource(id).value.sp
 fun floatResource(@DimenRes id: Int): Float =
     ResourcesCompat.getFloat(LocalContext.current.resources, id)
 
+@Composable
+fun FormBiodataScreen() {
+    var firstName by remember { mutableStateOf("") }
+    var lastName by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    var birthDate by remember { mutableStateOf("") }
+    var experience by remember { mutableStateOf("") }
+    var skillAndroid by remember { mutableStateOf(false) }
+    var skillUiux by remember { mutableStateOf(false) }
+    var skillWeb by remember { mutableStateOf(false) }
+    var showResult by remember { mutableStateOf(false) }
+
+    
