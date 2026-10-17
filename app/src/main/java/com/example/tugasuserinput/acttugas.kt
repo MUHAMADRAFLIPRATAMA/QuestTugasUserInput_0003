@@ -108,3 +108,11 @@ fun FormBiodataScreen() {
                     .padding(dimensionResource(R.dimen.indicator_padding))
             )
 
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = dimensionResource(R.dimen.card_top_offset))
+                    .shadow(
+                        elevation = dimensionResource(R.dimen.card_elevation),
+                        shape = cardShape
+                    )
