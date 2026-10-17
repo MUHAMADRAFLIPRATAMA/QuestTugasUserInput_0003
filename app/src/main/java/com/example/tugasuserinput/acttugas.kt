@@ -122,4 +122,13 @@ fun FormBiodataScreen() {
                     )
                     .padding(dimensionResource(R.dimen.card_padding))
             ) {
-                
+                Column(modifier = Modifier.fillMaxWidth()) {
+
+                    Text(
+                        text = stringResource(R.string.form_title),
+                        color = colorResource(R.color.form_title),
+                        fontSize = spResource(R.dimen.text_title),
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
