@@ -169,4 +169,11 @@ fun FormBiodataScreen() {
                         modifier = Modifier.fillMaxWidth()
                     )
 
-                    
+                    Spacer(Modifier.height(dimensionResource(R.dimen.section_gap)))
+                    Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.field_gap))) {
+                        DateField(
+                            value = birthDate,
+                            onDateSelected = { birthDate = it },
+                            modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
+                        )
+                        
