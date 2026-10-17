@@ -317,3 +317,10 @@ private fun DateField(
     var showDialog by remember { mutableStateOf(false) }
     val pattern = stringResource(R.string.date_format)
 
+    OutlinedTextField(
+        value = value,
+        onValueChange = {},
+        readOnly = true,
+        singleLine = true,
+        label = { Text(stringResource(R.string.birth_date), fontSize = spResource(R.dimen.text_field)) },
+        trailingIcon = {
