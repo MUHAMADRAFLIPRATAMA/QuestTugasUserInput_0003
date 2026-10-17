@@ -254,3 +254,8 @@ fun FormBiodataScreen() {
     }
 }
 
+@Composable
+private fun PageIndicator(modifier: Modifier = Modifier) {
+    val total = integerResource(R.integer.indicator_count)
+    val active = integerResource(R.integer.indicator_active_index)
+    
