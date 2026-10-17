@@ -355,3 +355,9 @@ private fun DateField(
     }
 }
 
+@Composable
+private fun ExperienceDropdown(
+    value: String,
+    onSelected: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
