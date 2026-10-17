@@ -348,4 +348,10 @@ private fun DateField(
                     showDialog = false
                 }) { Text(stringResource(R.string.ok)) }
             },
-            
+            dismissButton = {
+                TextButton(onClick = { showDialog = false }) { Text(stringResource(R.string.cancel)) }
+            }
+        ) { DatePicker(state = state) }
+    }
+}
+
