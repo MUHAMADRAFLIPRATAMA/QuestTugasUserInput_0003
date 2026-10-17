@@ -120,3 +120,6 @@ fun FormBiodataScreen() {
                         color = colorResource(R.color.card_background),
                         shape = cardShape
                     )
+                    .padding(dimensionResource(R.dimen.card_padding))
+            ) {
+                
