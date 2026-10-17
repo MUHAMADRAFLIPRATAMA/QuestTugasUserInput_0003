@@ -361,3 +361,6 @@ private fun ExperienceDropdown(
     onSelected: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    var expanded by remember { mutableStateOf(false) }
+    val options = stringArrayResource(R.array.experience_options)
+
