@@ -324,3 +324,10 @@ private fun DateField(
         singleLine = true,
         label = { Text(stringResource(R.string.birth_date), fontSize = spResource(R.dimen.text_field)) },
         trailingIcon = {
+            IconButton(onClick = { showDialog = true }) {
+                Icon(
+                    painter = painterResource(R.drawable.ic_calendar),
+                    contentDescription = stringResource(R.string.icon_calendar)
+                )
+            }
+        },
