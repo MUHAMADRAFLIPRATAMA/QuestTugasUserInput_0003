@@ -23,3 +23,11 @@
     <string name="skill_separator" translatable="false">, </string>
     <string name="form_bg_desc">Latar form</string>
 
+    <string-array name="experience_options">
+        <item>&lt; 1 Tahun</item>
+        <item>1 - 3 Tahun</item>
+        <item>3 - 5 Tahun</item>
+        <item>&gt; 5 Tahun</item>
+    </string-array>
+
+    
