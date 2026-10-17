@@ -295,4 +295,15 @@ private fun FormField(
     modifier: Modifier = Modifier,
     keyboardType: KeyboardType = KeyboardType.Text
 ) {
-    
+    OutlinedTextField(
+        value = value,
+        onValueChange = onValueChange,
+        label = { Text(label, fontSize = spResource(R.dimen.text_field)) },
+        singleLine = true,
+        shape = RoundedCornerShape(dimensionResource(R.dimen.field_corner)),
+        keyboardOptions = KeyboardOptions(keyboardType = keyboardType),
+        colors = fieldColors(),
+        modifier = modifier
+    )
+}
+
