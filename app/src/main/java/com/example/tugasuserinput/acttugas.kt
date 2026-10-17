@@ -364,3 +364,22 @@ private fun ExperienceDropdown(
     var expanded by remember { mutableStateOf(false) }
     val options = stringArrayResource(R.array.experience_options)
 
+    Box(modifier = modifier) {
+        OutlinedTextField(
+            value = value,
+            onValueChange = {},
+            readOnly = true,
+            singleLine = true,
+            label = { Text(stringResource(R.string.experience), fontSize = spResource(R.dimen.text_field)) },
+            trailingIcon = {
+                IconButton(onClick = { expanded = true }) {
+                    Icon(
+                        painter = painterResource(R.drawable.ic_arrow_drop_down),
+                        contentDescription = stringResource(R.string.icon_dropdown)
+                    )
+                }
+            },
+            shape = RoundedCornerShape(dimensionResource(R.dimen.field_corner)),
+            colors = fieldColors(),
+            modifier = Modifier.fillMaxWidth()
+        )
