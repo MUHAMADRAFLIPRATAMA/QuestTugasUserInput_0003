@@ -202,4 +202,13 @@ fun FormBiodataScreen() {
                         SkillCheck(stringResource(R.string.skill_web), skillWeb) { skillWeb = it }
                     }
 
-                    
+                    Button(
+                        onClick = { showResult = true },
+                        enabled = isValid,
+                        shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner)),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(R.color.button_enabled),
+                            contentColor = colorResource(R.color.button_text),
+                            disabledContainerColor = colorResource(R.color.button_disabled),
+                            disabledContentColor = colorResource(R.color.button_text_disabled)
+                        ),
