@@ -331,3 +331,9 @@ private fun DateField(
                 )
             }
         },
+        shape = RoundedCornerShape(dimensionResource(R.dimen.field_corner)),
+        colors = fieldColors(),
+        modifier = modifier
+    )
+
+    
