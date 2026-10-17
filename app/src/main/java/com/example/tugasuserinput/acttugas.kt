@@ -197,3 +197,9 @@ fun FormBiodataScreen() {
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
+                        SkillCheck(stringResource(R.string.skill_android), skillAndroid) { skillAndroid = it }
+                        SkillCheck(stringResource(R.string.skill_uiux), skillUiux) { skillUiux = it }
+                        SkillCheck(stringResource(R.string.skill_web), skillWeb) { skillWeb = it }
+                    }
+
+                    
