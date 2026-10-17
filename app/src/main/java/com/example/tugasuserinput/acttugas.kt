@@ -176,4 +176,11 @@ fun FormBiodataScreen() {
                             onDateSelected = { birthDate = it },
                             modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
                         )
-                        
+                        ExperienceDropdown(
+                            value = experience,
+                            onSelected = { experience = it },
+                            modifier = Modifier.weight(floatResource(R.dimen.weight_equal))
+                        )
+                    }
+
+                    
