@@ -245,3 +245,12 @@ fun FormBiodataScreen() {
                     )
                 )
             },
+            confirmButton = {
+                TextButton(onClick = { showResult = false }) {
+                    Text(stringResource(R.string.ok))
+                }
+            }
+        )
+    }
+}
+
