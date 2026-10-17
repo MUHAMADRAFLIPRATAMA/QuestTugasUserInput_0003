@@ -399,3 +399,14 @@ private fun ExperienceDropdown(
 
 
 
+@Composable
+private fun SkillCheck(label: String, checked: Boolean, onChange: (Boolean) -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(checked = checked, onCheckedChange = onChange)
+        Text(
+            text = label,
+            color = colorResource(R.color.form_text),
+            fontSize = spResource(R.dimen.text_skill)
+        )
+    }
+}
