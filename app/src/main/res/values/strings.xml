@@ -30,4 +30,7 @@
         <item>&gt; 5 Tahun</item>
     </string-array>
 
-    
+    <integer name="indicator_count">4</integer>
+    <integer name="indicator_active_index">0</integer>
+
+</resources>
