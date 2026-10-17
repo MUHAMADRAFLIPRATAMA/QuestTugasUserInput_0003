@@ -212,3 +212,8 @@ fun FormBiodataScreen() {
                             disabledContainerColor = colorResource(R.color.button_disabled),
                             disabledContentColor = colorResource(R.color.button_text_disabled)
                         ),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = dimensionResource(R.dimen.button_gap_top))
+                            .height(dimensionResource(R.dimen.button_height))
+                    ) {
