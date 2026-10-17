@@ -60,3 +60,6 @@ import java.util.Date
 import java.util.Locale
 import androidx.compose.material3.AlertDialog
 
+@Composable
+fun spResource(@DimenRes id: Int): TextUnit = dimensionResource(id).value.sp
+
