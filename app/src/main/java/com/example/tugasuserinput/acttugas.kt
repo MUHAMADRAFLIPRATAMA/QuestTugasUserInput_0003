@@ -88,4 +88,10 @@ fun FormBiodataScreen() {
         topEnd = dimensionResource(R.dimen.card_corner)
     )
 
-    
+    Scaffold(containerColor = colorResource(R.color.screen_background)) { padding ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+        ) {
+            
